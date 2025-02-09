@@ -1,0 +1,9 @@
+services:
+  kotlin-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    volumes:
+    - .:/app:cached
+    working_dir: /app
